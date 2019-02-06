@@ -18,6 +18,7 @@ Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-
  * @param {number[]} prices
  * @return {number}
  */
+ 
 var maxProfit = function(prices) {
     if (!prices) 
         return 0;
