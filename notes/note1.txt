@@ -1,0 +1,142 @@
+2.5.2018
+
+Chapter 1 (Introduction):
+
+1. HTML: specify the content of web pages
+   CSS: specify the presentation of web pages
+   JavaScript: the behavior of web pages.
+
+2. JS is a high-level, dynamic, untyped interpreted programming language.
+         well-suited to object-oriented and functional programming style.
+
+
+Chapter 2 (Lexical Structure):
+
+1. Case Sensitivity
+
+2. Identifier:
+	are used to name variables and functions and to provide labels for certain loops in JS code.
+	must begin with a letter, _, or $.
+
+3. optional semicolons
+	page 25 for details. Interesting but nobody write code like this...
+
+
+Chapter 3 (Types, Values and Variables)
+
+1. Overview: 
+
+	types: 
+
+	primitive types and object types
+
+	primitive types: numbers, strings and boolean truth values
+
+	variables: defines a symbolic name for a value and allows the value to be referred to by name
+	
+2. Numbers:
+
+	1.) Unlike many languages, JS doesn't make a distinction between integer and floating-point values.
+
+	All numbers in JS are represented as floating-point values.
+
+	(+-) 1.7976931348623157 x 10^308 (large)
+
+	(+-) 5 x 10^-324 (small)
+
+	Arithemetic in JS (details in page33)
+
+	Arithemetic in JS doesn't raise errors in cases of overflow, underflow, or divide by 0.
+
+	When the result of a numeric operation is larger than the largest representable number(overflow), 
+	the result is a special infinity value, which represemted as Infinity.
+
+	Same for -Infinity.
+
+	2.)	Binary Floating-Pointing and Rounding Errors.
+
+	3.) Dates amd Times.
+
+
+3. Text:
+
+	1.) Strings.
+
+		A string is an immutable ordered sequence of 16-bit values, each of which typically represents a Unicode-character.
+
+		JS's strings use zero-based indexing.
+
+		Use of backslash character(\) details in page38.
+
+		Methods can invoke on strings.
+
+	2.) Pattern Matching
+
+4. Boolean Values
+
+	if (o)...
+
+	the body of the if will be executed only if o is not null.
+
+	similiar example: if(o != null)...
+
+
+5. null and undefined
+
+	null is a language keyword that evaluates to a special value that is usually used to indicate the absence of a value. 
+
+	undefined represents a deeper kind of absence. It's the value of variables that have not been 
+	initialized and the value you get when you query the value of an object property or array element that doesn't exist. 
+
+
+6. Global Object
+	
+7. Wrapper Objects	
+
+	details in page43
+
+8. Type Conversions
+
+	examples in page46
+
+	1.) explicit Conversions
+
+		Ths simplest way to use the functions: Boolean(), Number(), String(), or Object()
+
+		When working with financial or scientific data, we have functions like:
+
+		toFixed(), toExponential(), toPrecision().
+
+		more on page 49 about parseXx() functions.
+
+	2.) toString() and valueOf()
+
+	3.) The following code demonstrates the behavior of +, -, ==, and > with Date objects.
+
+
+	var now = new Date(); //create a date object
+	typeof(now + 1)       //=>"string": + converts dates to strings
+	typeof(now - 1)		  //=>"number": - uses object to number conversion
+	now == now.toString() //=> true: implicit and explicit string conversions
+	now > (now-1)		  //=> true: > converts a Date to a number
+
+
+9 Variable Declaration
+
+	Variables are declared with var keyword.
+
+	It's legal and harmless to declare a variable more than once with the var statement.
+	If you attempt to read the value of an undeclared variable, JS generates an error.
+
+10. Variable Scope
+
+	The scope of a variable is the region of your program source code in which it is defined.
+
+	A global variable has global scope; it's defined everywhere in JS code.
+
+	On the other hand, variables declared within a function are defined only within the body of the function.
+	They are local variables and have local scope. 
+	Function parameters also count as local variables and are defined only within the body of the function.
+
+
+	Function Scope and Hoisting (examples are in page54)
