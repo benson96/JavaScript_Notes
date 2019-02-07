@@ -1,0 +1,124 @@
+2.6.2019
+
+Chapter 4 Expressions and Operators
+
+An expression is a phrase of JS that a JS interpreter can evaluate to produce a value.
+
+The most common way to build a complex expression out of simpler expressoin is with operator.
+
+1. Primiary Expressions
+
+2. Object and Array Initializers
+
+	Object and array initializers are expressions whose value is a newly created object or array
+
+3. Function Definition Expressions
+
+	A function definition expression defines a JS function, and the value of such an expressions is the newly defined function.
+
+4. Property Access Expressions
+
+	A property access expression ecaluates to the value of an object property or an array element.
+
+	ex:
+
+	//An example object
+	var o = {
+
+		x:1;
+
+		y:{z:3}
+	};    
+
+	o.x 	//=>1
+
+	o.y.z   // =>3
+
+	o["x"]  //=>1
+
+	//An example array that contains the object
+
+	var a = [o,4,[5,6]];
+
+	a[1] 	//=>4
+
+	a[2]["1"] 	//=>6
+
+	a[0].x	 //=>1
+
+5. Invocation Expressions
+
+	An invocation expression is JS's syntax for calling a function or a method.
+
+	It starts wotj a function expression that identifies the functions to be called.
+
+6. Object Creation Expressions
+
+	An object creation expression creates a new object and invokes a function (called a constructor) to initialize the properties of that oject. 
+
+	keyword: new
+
+	EX:
+
+	new Object()
+	new Point(2,3)
+
+7. Operator 
+
+	details in page63
+
+8. Arithmetic Expressions
+
+	1.) Unary Arithmetic Operators
+	2.) Bitwise Operators
+
+9. Relational Expressions
+
+	1.) Equality and Inequality Operators
+	2.) Comparsion Operators
+
+10. Logical Expression.
+	
+	1.） Logical AND
+	2.)  Logical OR
+	3.)  Logical NOT
+
+11. Assignment Expressions
+
+12. Evaluation Expressions
+
+	1.） eval()
+
+	2.) Golbal eval()
+
+13. Miscellaneous Operators
+
+	1.) Conditional Operator (?:)
+
+		ex:
+		//absolute value of x
+		x > 0 ? x : -x
+
+		greeting  = "hello" + (username ? username : "there");
+
+		//equivalent to, but more compact than:
+
+		greeting = "hello";
+		if(username)
+			greeting += username;
+
+
+	2.) typeof Operator
+
+		details in page83
+
+	3.) delete operator
+
+	4.) void operator
+
+		void is a unary operator that appears before its single operand, which may be of any type.
+		This operator is unusual and infrequently used: it evaluates its operand, then discards the value and returns undefined.
+
+	5.) Comma Operator(,)
+
+		binary operator whose operands may be of any type.
