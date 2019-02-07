@@ -122,3 +122,66 @@ The most common way to build a complex expression out of simpler expressoin is w
 	5.) Comma Operator(,)
 
 		binary operator whose operands may be of any type.
+
+
+
+
+Chapter 5  Statements
+
+Statements are JS sentences or cmmands. 
+
+Expressions are evaluated to produce a value, but statements are executed to make something happen.
+
+1. Expression Statements
+
+	EX: Assignments statements
+
+2. Compound and Empty Statements
+
+	Just as the comma operator combines multiple expressions into a single expression, a statement block combines multiple statements into a single compound statement. 
+
+	Empty statements 
+
+3. Declaration Statements
+
+	The var and function are declaration statements, they declare or define variables and functions.
+
+4. Conditionals 
+
+	1.) if
+	2.)else if
+	3.)switch
+
+5. loops
+
+	1.)  while
+	2.)  do/while
+	3.)  for
+	4.)  for/in
+	
+		ex:
+
+		for(var i = 0; i < a.length; i++)
+
+		// equivalent to 
+
+		for(var p in o)
+
+6. Jumps
+
+	1.) break
+	2.) continue
+	3.) return
+	4.) throw
+	5.) try/catch/finally
+
+
+7. Miscellaneous Statements
+
+	1.) with
+	2.) debugger (usually does nothing)
+	3.) use strict
+
+Summary of JS statements:
+
+details in page112.
